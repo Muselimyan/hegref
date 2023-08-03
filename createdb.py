@@ -8,8 +8,8 @@ with app.app_context():
     db.session.add(user)
     db.session.commit()
 
-    #new_greeting = Greeting(message="Welcome to the site!")
-    #db.session.add(new_greeting)
-    #db.session.commit()
+    new_greeting = Greeting(message="Welcome to the site!")
+    db.session.add(new_greeting)
+    db.session.commit()
 
 print("Database and table created successfully!")
