@@ -8,7 +8,7 @@ from flask_login import login_user, logout_user, login_required
 
 app = Flask(__name__)
 app.secret_key = "B\x8fc\xb8I\xbc\x1c\xb3t\n\xad8\xfb\x93g\xd7"
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:vvv123@localhost/HegRef'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:vvv123@localhost/hegref'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)

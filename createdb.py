@@ -1,4 +1,4 @@
-from app import app, db, User
+from app import app, db, User, Greeting
 
 with app.app_context():
     db.create_all()
