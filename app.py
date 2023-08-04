@@ -43,7 +43,7 @@ def hello():
     else:
         return 'Hello, World!'
         
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/ref/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
         username = request.form['username']
@@ -55,7 +55,7 @@ def login():
         flash('Invalid username or password')
     return render_template('login.html')
 
-@app.route('/logout')
+@app.route('/ref/logout/')
 @login_required
 def logout():
     logout_user()
